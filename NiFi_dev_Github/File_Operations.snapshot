@@ -15,7 +15,16 @@
         "defaultFlowFileExpiration" : "0 sec",
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
-        "funnels" : [ ],
+        "funnels" : [ {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "d7e52771-87a8-3cfc-b551-4ef5c054a8cc",
+          "identifier" : "24a0e023-47d4-3dcd-8384-7ba1878aa5c2",
+          "instanceIdentifier" : "0e869844-018f-1000-27c8-2fe6ab6537d5",
+          "position" : {
+            "x" : 650.9999991103631,
+            "y" : 183.999963363618
+          }
+        } ],
         "identifier" : "d7e52771-87a8-3cfc-b551-4ef5c054a8cc",
         "inputPorts" : [ ],
         "instanceIdentifier" : "04274f2c-018f-1000-386e-894d6a644457",
@@ -23,8 +32,8 @@
         "name" : "File_Processing",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 512.0,
-          "y" : -392.0
+          "x" : 480.0,
+          "y" : -456.0
         },
         "processGroups" : [ ],
         "processors" : [ {
