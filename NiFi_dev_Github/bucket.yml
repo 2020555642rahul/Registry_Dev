@@ -1,6 +1,6 @@
 flows:
-  8f283f27-1a34-44fc-9460-dce493e990e3: {ver: 2, file: File_Operations.snapshot, comments: Added
-      Funnel, author: 'CN=rahulksi184, OU=ksolves', created: 1713936033926, flowName: File_Operations,
+  8f283f27-1a34-44fc-9460-dce493e990e3: {ver: 3, file: File_Operations.snapshot, comments: '',
+    author: 'CN=localhost, OU=NIFI', created: 1713960884349, flowName: File_Operations,
     flowDesc: ''}
   2b438d92-04e7-409b-9874-11821d93d2a7: {ver: 1, file: Get_File_Processing.snapshot,
     comments: '', author: 'CN=rahulksi184, OU=ksolves', created: 1713760988746, flowName: Get_File_Processing,

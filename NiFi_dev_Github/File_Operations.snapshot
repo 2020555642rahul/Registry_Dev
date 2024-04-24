@@ -15,25 +15,16 @@
         "defaultFlowFileExpiration" : "0 sec",
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
-        "funnels" : [ {
-          "componentType" : "FUNNEL",
-          "groupIdentifier" : "d7e52771-87a8-3cfc-b551-4ef5c054a8cc",
-          "identifier" : "24a0e023-47d4-3dcd-8384-7ba1878aa5c2",
-          "instanceIdentifier" : "0e869844-018f-1000-27c8-2fe6ab6537d5",
-          "position" : {
-            "x" : 650.9999991103631,
-            "y" : 183.999963363618
-          }
-        } ],
-        "identifier" : "d7e52771-87a8-3cfc-b551-4ef5c054a8cc",
+        "funnels" : [ ],
+        "identifier" : "be3a232a-c688-321d-99f0-31e64bd4045d",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "04274f2c-018f-1000-386e-894d6a644457",
+        "instanceIdentifier" : "0e85dfd7-018f-1000-7304-90670493018e",
         "labels" : [ ],
-        "name" : "File_Processing",
+        "name" : "file_operation",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 480.0,
-          "y" : -456.0
+          "x" : -8.0,
+          "y" : -240.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -49,97 +40,58 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "d7e52771-87a8-3cfc-b551-4ef5c054a8cc",
-          "identifier" : "63815af8-439e-3e26-9c40-4224e23150cf",
-          "instanceIdentifier" : "042799af-018f-1000-78fa-d7be907d0654",
+          "groupIdentifier" : "be3a232a-c688-321d-99f0-31e64bd4045d",
+          "identifier" : "2069c9f3-f59f-3056-80cd-48db793fe159",
+          "instanceIdentifier" : "0e861c78-018f-1000-9194-7f06b6029622",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "GetFile",
+          "name" : "FetchFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 248.0,
-            "y" : 16.0
+            "x" : 288.0,
+            "y" : 120.0
           },
           "properties" : {
-            "Keep Source File" : "false",
-            "Minimum File Age" : "0 sec",
-            "Polling Interval" : "0 sec",
-            "Batch Size" : "10",
-            "Minimum File Size" : "0 B",
-            "Ignore Hidden Files" : "true",
-            "Recurse Subdirectories" : "true",
-            "File Filter" : "[^\\.].*"
+            "Move Conflict Strategy" : "Rename",
+            "Log level when file not found" : "ERROR",
+            "Log level when permission denied" : "ERROR",
+            "File to Fetch" : "${absolute.path}/${filename}",
+            "Completion Strategy" : "None"
           },
           "propertyDescriptors" : {
-            "Keep Source File" : {
-              "displayName" : "Keep Source File",
+            "Move Conflict Strategy" : {
+              "displayName" : "Move Conflict Strategy",
               "identifiesControllerService" : false,
-              "name" : "Keep Source File",
+              "name" : "Move Conflict Strategy",
               "sensitive" : false
             },
-            "Minimum File Age" : {
-              "displayName" : "Minimum File Age",
+            "Log level when file not found" : {
+              "displayName" : "Log level when file not found",
               "identifiesControllerService" : false,
-              "name" : "Minimum File Age",
+              "name" : "Log level when file not found",
               "sensitive" : false
             },
-            "Polling Interval" : {
-              "displayName" : "Polling Interval",
+            "Move Destination Directory" : {
+              "displayName" : "Move Destination Directory",
               "identifiesControllerService" : false,
-              "name" : "Polling Interval",
+              "name" : "Move Destination Directory",
               "sensitive" : false
             },
-            "Input Directory" : {
-              "displayName" : "Input Directory",
+            "Log level when permission denied" : {
+              "displayName" : "Log level when permission denied",
               "identifiesControllerService" : false,
-              "name" : "Input Directory",
+              "name" : "Log level when permission denied",
               "sensitive" : false
             },
-            "Maximum File Age" : {
-              "displayName" : "Maximum File Age",
+            "File to Fetch" : {
+              "displayName" : "File to Fetch",
               "identifiesControllerService" : false,
-              "name" : "Maximum File Age",
+              "name" : "File to Fetch",
               "sensitive" : false
             },
-            "Batch Size" : {
-              "displayName" : "Batch Size",
+            "Completion Strategy" : {
+              "displayName" : "Completion Strategy",
               "identifiesControllerService" : false,
-              "name" : "Batch Size",
-              "sensitive" : false
-            },
-            "Maximum File Size" : {
-              "displayName" : "Maximum File Size",
-              "identifiesControllerService" : false,
-              "name" : "Maximum File Size",
-              "sensitive" : false
-            },
-            "Minimum File Size" : {
-              "displayName" : "Minimum File Size",
-              "identifiesControllerService" : false,
-              "name" : "Minimum File Size",
-              "sensitive" : false
-            },
-            "Ignore Hidden Files" : {
-              "displayName" : "Ignore Hidden Files",
-              "identifiesControllerService" : false,
-              "name" : "Ignore Hidden Files",
-              "sensitive" : false
-            },
-            "Recurse Subdirectories" : {
-              "displayName" : "Recurse Subdirectories",
-              "identifiesControllerService" : false,
-              "name" : "Recurse Subdirectories",
-              "sensitive" : false
-            },
-            "File Filter" : {
-              "displayName" : "File Filter",
-              "identifiesControllerService" : false,
-              "name" : "File Filter",
-              "sensitive" : false
-            },
-            "Path Filter" : {
-              "displayName" : "Path Filter",
-              "identifiesControllerService" : false,
-              "name" : "Path Filter",
+              "name" : "Completion Strategy",
               "sensitive" : false
             }
           },
@@ -150,7 +102,7 @@
           "schedulingPeriod" : "0 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
-          "type" : "org.apache.nifi.processors.standard.GetFile",
+          "type" : "org.apache.nifi.processors.standard.FetchFile",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
