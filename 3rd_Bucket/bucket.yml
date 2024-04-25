@@ -1,4 +1,7 @@
 flows:
+  311778b3-6f1f-4d10-a1ec-96caf11b61cd: {ver: 1, file: AVRO_JSON.snapshot, comments: '',
+    author: 'CN=rahulksi184, OU=ksolves', created: 1714045025736, flowName: AVRO_JSON,
+    flowDesc: ''}
   b5a4d7b4-8fab-42da-830e-adbc7d07c20e: {ver: 1, file: File.snapshot, comments: '',
     author: 'CN=rahulksi184, OU=ksolves', created: 1713941018899, flowName: File,
     flowDesc: ''}
