@@ -1,4 +1,6 @@
 flows:
+  511e6f56-7127-47cd-b2b9-b23585213064: {ver: 1, file: sql10.snapshot, comments: '',
+    author: 'CN=nifi_Dev, OU=dev', created: 1716803751040, flowName: sql10, flowDesc: ''}
   093be3bb-2d57-4ad5-bcd5-5bf78225608c: {ver: 1, file: Get_File_Processing.snapshot,
     comments: '', author: 'CN=rahulksi184, OU=ksolves', created: 1713761533349, flowName: Get_File_Processing,
     flowDesc: ''}
